@@ -5,17 +5,16 @@
 <script>
 	
 	
-	
 	$(function() {
 		var socket = io();
-		socket.on('pin_status', function (data) {
-			//alert ("Something went wrong1!"+ data );
+		socket.on('pin_status', function (data,pinno) {
+			//alert ("data=" + data + " pin no: " + pinno );
 			if(data ===1){
-				document.getElementById("s1").innerHTML = "ON";
+				document.getElementById("s"+pinno).innerHTML = "ON";
 				//alert ("Something went wrong2!" );
 			}
 			else if (data ===0)
-				document.getElementById("s1").innerHTML = "OFF";
+				document.getElementById("s"+pinno).innerHTML = "OFF";
 				//alert ("Something went wrong3!" );
 			
 		});
@@ -26,7 +25,6 @@
 		
 		
 	});
-	
 	
 	
 function set_pin(pin) {
