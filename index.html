@@ -36,9 +36,42 @@
 
 
 <html>
-<body>
+
+<head>
+<meta charset="utf-8" />
+<title>Έλεγχος Σπιτιού</title>
+</head>
+<body style="background-color:#b0c4de;">
 <h1>Control LED light</h1>
 <input id="led" type="checkbox">LED
+
+<h1>Έλεγχος Σπιτιού</h1>
+ <div class="grid-container" style="display: grid;
+  grid-template-columns: 110px 50px 80px 100px;
+ width:350px;
+ border:2px  solid #EEA50D; 
+ background-color:#EDEB8F;
+  padding: 2px;">
+  <div class="grid-item">Κατάσταση 1:</div>
+  <div class="grid-item"><g id="s1">0</g></div>
+  <div class="grid-item">Εντολή 1:</div>
+  <div class="grid-item"><button   onclick="set_pin(1)">ON/OFF</button></div>
+  
+  <div class="grid-item">Κατάσταση 2:</div>
+  <div class="grid-item"><g id="s2">0</g></div>
+  <div class="grid-item">Εντολή 2:</div>
+  <div class="grid-item"><button   onclick="set_pin(2)">ON/OFF</button></div>
+  
+  <div class="grid-item">Κατάσταση 3:</div>
+  <div class="grid-item"><g id="s3">0</g></div>
+  <div class="grid-item">Εντολή 3:</div>
+  <div class="grid-item"><button   onclick="set_pin(3)">ON/OFF</button></div>
+  
+  <div class="grid-item">Κατάσταση 4:</div>
+  <div class="grid-item"><g id="s4">0</g></div>
+  <div class="grid-item">Εντολή 4:</div>
+  <div class="grid-item"><button   onclick="set_pin(4)">ON/OFF</button></div>
+</div> 
 </body>
 </html>
 
