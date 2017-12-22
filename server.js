@@ -19,7 +19,6 @@ app.get('/', function(req, res){
 	console.log('new request');
 });
 
-
 io.on('connection', function(socket){
 	
 	socket.on('led', function(msg){
@@ -35,7 +34,6 @@ io.on('connection', function(socket){
 	
 	socket.on('set_pin', function(msg){
 		console.log('set_pin: ' + msg);
-		
 		if (msg===1){
 			write_pin_1.writeSync(1);
 			sleep.msleep(70);
@@ -45,11 +43,8 @@ io.on('connection', function(socket){
 			write_pin_2.writeSync(1);
 			sleep.msleep(70);
 			write_pin_2.writeSync(0);
-		}
-			
+		}	
 	});
-	
-	
 	
 });
 
@@ -57,7 +52,7 @@ setInterval(function(){
 	
 	io.emit('pin_status', read_pin_1.readSync(), "1");
 	io.emit('pin_status', read_pin_2.readSync(), "2");
-	console.log('pin_status' + read_pin_2.readSync()+ Date());
+	//console.log('pin_status' + read_pin_2.readSync()+ Date());
 
 }, 1000);
 
