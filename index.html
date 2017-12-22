@@ -8,33 +8,24 @@
 		socket.on('pin_status', function (data,pinno) {
 			//alert ("data=" + data + " pin no: " + pinno );
 			if(data ===1){
-				//document.getElementById("s"+pinno).innerHTML = "ON";
 				$('#s'+pinno).html("ON");
-				//alert ("Something went wrong2!" );
 			}
 			else if (data ===0)
 				$('#s'+pinno).html("OFF");
-				//alert ("Something went wrong3!" );
-			
 		});
 		socket.on('test', function(data) {
 			//console.log('Test received ' + data);
 			alert ("Something went wrong4!" );
 		});
-		
-		
 	});
-	
 	
 function set_pin(pin) {
 	var socket = io();
 	socket.emit('set_pin', pin);
 }
 	
-	
 </script>
  
-  
 <html>
 
 <head>
@@ -53,23 +44,22 @@ function set_pin(pin) {
   <div class="grid-item">Κατάσταση 1:</div>
   <div class="grid-item"><g id="s1">0</g></div>
   <div class="grid-item">Εντολή 1:</div>
-  <div class="grid-item"><button   onclick="set_pin(1)">ON/OFF</button></div>
+  <div class="grid-item"><button onclick="set_pin(1)">ON/OFF</button></div>
   
   <div class="grid-item">Κατάσταση 2:</div>
   <div class="grid-item"><g id="s2">0</g></div>
   <div class="grid-item">Εντολή 2:</div>
-  <div class="grid-item"><button   onclick="set_pin(2)">ON/OFF</button></div>
+  <div class="grid-item"><button onclick="set_pin(2)">ON/OFF</button></div>
   
   <div class="grid-item">Κατάσταση 3:</div>
   <div class="grid-item"><g id="s3">0</g></div>
   <div class="grid-item">Εντολή 3:</div>
-  <div class="grid-item"><button   onclick="set_pin(3)">ON/OFF</button></div>
+  <div class="grid-item"><button onclick="set_pin(3)">ON/OFF</button></div>
   
   <div class="grid-item">Κατάσταση 4:</div>
   <div class="grid-item"><g id="s4">0</g></div>
   <div class="grid-item">Εντολή 4:</div>
-  <div class="grid-item"><button   onclick="set_pin(4)">ON/OFF</button></div>
+  <div class="grid-item"><button onclick="set_pin(4)">ON/OFF</button></div>
 </div> 
 </body>
 </html>
-
