@@ -34,7 +34,7 @@ io.on('connection', function(socket){
 	
 	socket.on('set_pin', function(msg){
 		console.log('set_pin: ' + msg);
-		LED.writeSync(msg);
+		LED.writeSync(1);
 		sleep.msleep(70);
 		LED.writeSync(0);
 	});
