@@ -50,11 +50,14 @@ io.on('connection', function(socket){
 	});
 	
 	
-	setInterval(function(){
-	io.emit('pin_status', read_pin_1.readSync(), "1");
-	io.emit('pin_status', read_pin_2.readSync(), "2");
-	console.log('pin_status' + read_pin_2.readSync());
-	}, 2000);
 	
 });
+
+setInterval(function(){
+	
+	io.emit('pin_status', read_pin_1.readSync(), "1");
+	io.emit('pin_status', read_pin_2.readSync(), "2");
+	console.log('pin_status' + read_pin_2.readSync()+ Date());
+
+}, 1000);
 
