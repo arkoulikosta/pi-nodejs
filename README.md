@@ -19,5 +19,5 @@ sudo ln -s /etc/pure-ftpd/conf/PureDB /etc/pure-ftpd/auth/60puredb
 sudo service pure-ftpd restart
 =----------------------------FTP--------------------------------------=
 
-
 run script on boot: http://weworkweplay.com/play/raspberry-pi-nodejs/
+sleep node: https://github.com/erikdubbelboer/node-sleep
