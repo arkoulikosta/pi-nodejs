@@ -4,7 +4,6 @@
 <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
 <script>
 	
-	
 	$(function() {
 		var socket = io();
 		socket.on('pin_status', function (data,pinno) {
@@ -23,19 +22,15 @@
 			alert ("Something went wrong4!" );
 		});
 		
-		
 	});
-	
-	
+		
 function set_pin(pin) {
 	var socket = io();
 	socket.emit('set_pin', pin);
-	
 }
 	
 	
 </script>
- 
   
 <html>
 
@@ -76,4 +71,3 @@ function set_pin(pin) {
 </div> 
 </body>
 </html>
-
