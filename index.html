@@ -6,13 +6,34 @@
 	
 	
 	
+	$(function() {
+		var socket = io();
+		socket.on('pin_status', function (data) {
+			//alert ("Something went wrong1!"+ data );
+			if(data ===1){
+				document.getElementById("s1").innerHTML = "ON";
+				//alert ("Something went wrong2!" );
+			}
+			else if (data ===0)
+				document.getElementById("s1").innerHTML = "OFF";
+				//alert ("Something went wrong3!" );
+			
+		});
+		socket.on('test', function(data) {
+			//console.log('Test received ' + data);
+			alert ("Something went wrong4!" );
+		});
+		
+		
+	});
+	
+	
+	
 function set_pin(pin) {
 	var socket = io();
 	socket.emit('set_pin', pin);
 	
 }
-	
-	
 	
 	
 </script>
