@@ -1,6 +1,6 @@
-var sleep = require('sleep');
 var port = 8080;
 var Gpio = require('onoff').Gpio;
+var sleep = require('sleep');
 var LED = new Gpio(4, 'out');
 
 var app = require('express')();
@@ -13,33 +13,30 @@ var io = require('socket.io')(http);
 
 app.get('/', function(req, res){
 	res.sendFile(__dirname + '/index.html');
+	console.log('new request');
 });
 
-//var ledPreviousState = LED.readSync();
-//setInterval(function() {
-//	if(!LED.readSync() == ledPreviousState){
-//		socket.emit();
-//	}
-//}, 2000);
 
 io.on('connection', function(socket){
 	//socket.emit();
-	console.log('new user');
+	//console.log('new user');
 	socket.on('led', function(msg){
-		//LED.writeSync(msg);
-		LED.writeSync(1);
+		console.log('func1');
+		LED.writeSync(msg);
+		io.emit('led', LED.readSync());
+		sleep.msleep(200);
+		//LED.writeSync(0);
+		
 		console.log('entered led event ' + msg);
 		io.emit('led', LED.readSync());
 		console.log('emited ' + LED.readSync());
-		sleep.msleep(200);
+	});
+	
+	socket.on('set_pin', function(msg){
+		console.log('set_pin: ' + msg);
+		LED.writeSync(msg);
+		sleep.msleep(70);
 		LED.writeSync(0);
-		io.emit('led', LED.readSync());
 	});
 });
 
-setInterval(function(){
-	console.log('interval sent');
-	io.emit('test', 'Hello from interval');
-
-
-}, 3000);
