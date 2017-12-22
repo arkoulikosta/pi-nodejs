@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <script src="/socket.io/socket.io.js"></script>
 <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
 <script>
@@ -9,11 +8,12 @@
 		socket.on('pin_status', function (data,pinno) {
 			//alert ("data=" + data + " pin no: " + pinno );
 			if(data ===1){
-				document.getElementById("s"+pinno).innerHTML = "ON";
+				//document.getElementById("s"+pinno).innerHTML = "ON";
+				$('#s'+pinno).html("ON");
 				//alert ("Something went wrong2!" );
 			}
 			else if (data ===0)
-				document.getElementById("s"+pinno).innerHTML = "OFF";
+				$('#s'+pinno).html("OFF");
 				//alert ("Something went wrong3!" );
 			
 		});
@@ -22,8 +22,10 @@
 			alert ("Something went wrong4!" );
 		});
 		
-	});
 		
+	});
+	
+	
 function set_pin(pin) {
 	var socket = io();
 	socket.emit('set_pin', pin);
@@ -31,6 +33,7 @@ function set_pin(pin) {
 	
 	
 </script>
+ 
   
 <html>
 
@@ -39,8 +42,6 @@ function set_pin(pin) {
 <title>Έλεγχος Σπιτιού</title>
 </head>
 <body style="background-color:#b0c4de;">
-<h1>Control LED light</h1>
-<input id="led" type="checkbox">LED
 
 <h1>Έλεγχος Σπιτιού</h1>
  <div class="grid-container" style="display: grid;
@@ -71,3 +72,4 @@ function set_pin(pin) {
 </div> 
 </body>
 </html>
+
