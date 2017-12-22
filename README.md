@@ -21,3 +21,6 @@ sudo service pure-ftpd restart
 
 run script on boot: http://weworkweplay.com/play/raspberry-pi-nodejs/
 sleep node: https://github.com/erikdubbelboer/node-sleep
+
+
+https://www.raspberrypi.org/documentation/configuration/security.md
