@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <script src="/socket.io/socket.io.js"></script>
 <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+
 <script>
 	
 	$(function() {
@@ -13,10 +14,10 @@
 			else if (data ===0)
 				$('#s'+pinno).html("OFF");
 		});
-		socket.on('test', function(data) {
+		//socket.on('test', function(data) {
 			//console.log('Test received ' + data);
-			alert ("Something went wrong4!" );
-		});
+			//alert ("Something went wrong4!" );
+		//});
 	});
 	
 function set_pin(pin) {
@@ -60,6 +61,138 @@ function set_pin(pin) {
   <div class="grid-item"><g id="s4">0</g></div>
   <div class="grid-item">Εντολή 4:</div>
   <div class="grid-item"><button onclick="set_pin(4)">ON/OFF</button></div>
+  
+    <div class="grid-item">Κατάσταση 5:</div>
+  <div class="grid-item"><g id="s5">0</g></div>
+  <div class="grid-item">Εντολή 5:</div>
+  <div class="grid-item"><button onclick="set_pin(5)">ON/OFF</button></div>
+ 
+  <div class="grid-item">Κατάσταση 6:</div>
+  <div class="grid-item"><g id="s6">0</g></div>
+  <div class="grid-item">Εντολή 6:</div>
+  <div class="grid-item"><button onclick="set_pin(6)">ON/OFF</button></div>
+  
+  <div class="grid-item">Κατάσταση 7:</div>
+  <div class="grid-item"><g id="s7">0</g></div>
+  <div class="grid-item">Εντολή 7:</div>
+  <div class="grid-item"><button onclick="set_pin(7)">ON/OFF</button></div>
+  
+  <div class="grid-item">Κατάσταση 8:</div>
+  <div class="grid-item"><g id="s8">0</g></div>
+  <div class="grid-item">Εντολή 8:</div>
+  <div class="grid-item"><button onclick="set_pin(8)">ON/OFF</button></div>
+  
+    <div class="grid-item">Κατάσταση 9:</div>
+  <div class="grid-item"><g id="s9">0</g></div>
+  <div class="grid-item">Εντολή 9:</div>
+  <div class="grid-item"><button onclick="set_pin(9)">ON/OFF</button></div>
+  
+    <div class="grid-item">Κατάσταση 10:</div>
+  <div class="grid-item"><g id="s10">0</g></div>
+  <div class="grid-item">Εντολή 10:</div>
+  <div class="grid-item"><button onclick="set_pin(10)">ON/OFF</button></div>
+  
+    <div class="grid-item">Κατάσταση 11:</div>
+  <div class="grid-item"><g id="s11">0</g></div>
+  <div class="grid-item">Εντολή 11:</div>
+  <div class="grid-item"><button onclick="set_pin(11)">ON/OFF</button></div>
+  
+  <div class="grid-item">Κατάσταση 12:</div>
+  <div class="grid-item"><g id="s12">0</g></div>
+  <div class="grid-item">Εντολή 12:</div>
+  <div class="grid-item"><button onclick="set_pin(12)">ON/OFF</button></div>
+  
+  <div class="grid-item">Κατάσταση 13:</div>
+  <div class="grid-item"><g id="s13">0</g></div>
+  <div class="grid-item">Εντολή 13:</div>
+  <div class="grid-item"><button onclick="set_pin(13)">ON/OFF</button></div>
+  
+  <div class="grid-item">Κατάσταση 14:</div>
+  <div class="grid-item"><g id="s14">0</g></div>
+  <div class="grid-item">Εντολή 14:</div>
+  <div class="grid-item"><button onclick="set_pin(14)">ON/OFF</button></div>
+  
+  <div class="grid-item">Κατάσταση 15:</div>
+  <div class="grid-item"><g id="s15">0</g></div>
+  <div class="grid-item">Εντολή 15:</div>
+  <div class="grid-item"><button onclick="set_pin(15)">ON/OFF</button></div>
+ 
+  <div class="grid-item">Κατάσταση 16:</div>
+  <div class="grid-item"><g id="s16">0</g></div>
+  <div class="grid-item">Εντολή 16:</div>
+  <div class="grid-item"><button onclick="set_pin(16)">ON/OFF</button></div>
+  
+  <div class="grid-item">Κατάσταση 17:</div>
+  <div class="grid-item"><g id="s17">0</g></div>
+  <div class="grid-item">Εντολή 17:</div>
+  <div class="grid-item"><button onclick="set_pin(17)">ON/OFF</button></div>
+  
+  <div class="grid-item">Κατάσταση 18:</div>
+  <div class="grid-item"><g id="s18">0</g></div>
+  <div class="grid-item">Εντολή 18:</div>
+  <div class="grid-item"><button onclick="set_pin(18)">ON/OFF</button></div>
+  
+    <div class="grid-item">Κατάσταση 19:</div>
+  <div class="grid-item"><g id="s19">0</g></div>
+  <div class="grid-item">Εντολή 19:</div>
+  <div class="grid-item"><button onclick="set_pin(19)">ON/OFF</button></div>
+  
+    <div class="grid-item">Κατάσταση 20:</div>
+  <div class="grid-item"><g id="s20">0</g></div>
+  <div class="grid-item">Εντολή 20:</div>
+  <div class="grid-item"><button onclick="set_pin(20)">ON/OFF</button></div>
+  
+   <div class="grid-item">Κατάσταση 21:</div>
+  <div class="grid-item"><g id="s21">0</g></div>
+  <div class="grid-item">Εντολή 21:</div>
+  <div class="grid-item"><button onclick="set_pin(21)">ON/OFF</button></div>
+  
+  <div class="grid-item">Κατάσταση 22:</div>
+  <div class="grid-item"><g id="s22">0</g></div>
+  <div class="grid-item">Εντολή 22:</div>
+  <div class="grid-item"><button onclick="set_pin(22)">ON/OFF</button></div>
+  
+  <div class="grid-item">Κατάσταση 23:</div>
+  <div class="grid-item"><g id="s23">0</g></div>
+  <div class="grid-item">Εντολή 23:</div>
+  <div class="grid-item"><button onclick="set_pin(23)">ON/OFF</button></div>
+  
+  <div class="grid-item">Κατάσταση 24:</div>
+  <div class="grid-item"><g id="s24">0</g></div>
+  <div class="grid-item">Εντολή 24:</div>
+  <div class="grid-item"><button onclick="set_pin(24)">ON/OFF</button></div>
+  
+    <div class="grid-item">Κατάσταση 25:</div>
+  <div class="grid-item"><g id="s25">0</g></div>
+  <div class="grid-item">Εντολή 25:</div>
+  <div class="grid-item"><button onclick="set_pin(25)">ON/OFF</button></div>
+ 
+  <div class="grid-item">Κατάσταση 26:</div>
+  <div class="grid-item"><g id="s26">0</g></div>
+  <div class="grid-item">Εντολή 26:</div>
+  <div class="grid-item"><button onclick="set_pin(26)">ON/OFF</button></div>
+  
+  <div class="grid-item">Κατάσταση 27:</div>
+  <div class="grid-item"><g id="s27">0</g></div>
+  <div class="grid-item">Εντολή 27:</div>
+  <div class="grid-item"><button onclick="set_pin(27)">ON/OFF</button></div>
+  
+  <div class="grid-item">Κατάσταση 28:</div>
+  <div class="grid-item"><g id="s28">0</g></div>
+  <div class="grid-item">Εντολή 28:</div>
+  <div class="grid-item"><button onclick="set_pin(28)">ON/OFF</button></div>
+  
+    <div class="grid-item">Κατάσταση 29:</div>
+  <div class="grid-item"><g id="s29">0</g></div>
+  <div class="grid-item">Εντολή 29:</div>
+  <div class="grid-item"><button onclick="set_pin(29)">ON/OFF</button></div>
+  
+    <div class="grid-item">Κατάσταση 30:</div>
+  <div class="grid-item"><g id="s30">0</g></div>
+  <div class="grid-item">Εντολή 30:</div>
+  <div class="grid-item"><button onclick="set_pin(30)">ON/OFF</button></div>
+  
+  
 </div> 
 </body>
 </html>
