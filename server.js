@@ -117,4 +117,3 @@ setInterval(function(){
 	//console.log('pin_status' + read_pin_2.readSync()+ Date());
 
 }, 1000);
-
