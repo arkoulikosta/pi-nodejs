@@ -1,0 +1,101 @@
+//app.get('/test.js', function(req, res){
+//	res.sendFile(__dirname + '/test.js');
+//	console.log('new request');
+//});
+
+
+
+//socket.on('led', function(msg){
+	//	console.log('func1');
+	//	write_pin_1.writeSync(msg);
+	//	io.emit('led', write_pin_1.readSync());
+	//	sleep.msleep(200);
+		
+	//	console.log('entered led event ' + msg);
+	//	io.emit('led', write_pin_1.readSync());
+	//	console.log('emited ' + write_pin_1.readSync());
+	//});
+  
+  
+  
+  
+  	/*if (msg===1){
+			write_pin_1.writeSync(1);
+			sleep.msleep(70);
+			write_pin_1.writeSync(0);
+		}
+		else if (msg === 2){
+			write_pin_2.writeSync(1);
+			sleep.msleep(70);
+			write_pin_2.writeSync(0);
+		}	
+		else if (msg === 3){
+			write_pin_3.writeSync(1);
+			sleep.msleep(70);
+			write_pin_3.writeSync(0);
+		}	
+		else if (msg === 4){
+			write_pin_4.writeSync(1);
+			sleep.msleep(70);
+			write_pin_4.writeSync(0);
+		}	
+		else if (msg === 5){
+			write_pin_5.writeSync(1);
+			sleep.msleep(70);
+			write_pin_5.writeSync(0);
+		}	
+		else if (msg === 6){
+			write_pin_6.writeSync(1);
+			sleep.msleep(70);
+			write_pin_6.writeSync(0);
+		}	
+		else if (msg === 7){
+			write_pin_7.writeSync(1);
+			sleep.msleep(70);
+			write_pin_7.writeSync(0);
+		}	
+		else if (msg === 8){
+			write_pin_8.writeSync(1);
+			sleep.msleep(70);
+			write_pin_8.writeSync(0);
+		}
+		else if (msg === 9){
+			write_pin_9.writeSync(1);
+			sleep.msleep(70);
+			write_pin_9.writeSync(0);
+		}	*/
+  
+  io.emit('pin_status', read_bus_1.readPin(1), "1");
+	io.emit('pin_status', read_bus_1.readPin(2), "2");
+	io.emit('pin_status', read_bus_1.readPin(3), "3");
+	io.emit('pin_status', read_bus_1.readPin(4), "4");
+	io.emit('pin_status', read_bus_1.readPin(5), "5");
+	io.emit('pin_status', read_bus_1.readPin(6), "6");
+	io.emit('pin_status', read_bus_1.readPin(7), "7");
+	io.emit('pin_status', read_bus_1.readPin(8), "8");
+	io.emit('pin_status', read_bus_1.readPin(9), "9");
+	io.emit('pin_status', read_bus_1.readPin(10), "10");
+	io.emit('pin_status', read_bus_1.readPin(11), "11");
+	io.emit('pin_status', read_bus_1.readPin(12), "12");
+	io.emit('pin_status', read_bus_1.readPin(13), "13");
+	io.emit('pin_status', read_bus_1.readPin(14), "14");
+	io.emit('pin_status', read_bus_1.readPin(15), "15");
+	io.emit('pin_status', read_bus_1.readPin(16), "16");
+	io.emit('pin_status', read_bus_2.readPin(1), "17");
+	io.emit('pin_status', read_bus_2.readPin(2), "18");
+	io.emit('pin_status', read_bus_2.readPin(3), "19");
+	io.emit('pin_status', read_bus_2.readPin(4), "20");
+	io.emit('pin_status', read_bus_2.readPin(5), "21");
+	io.emit('pin_status', read_bus_2.readPin(6), "22");
+	io.emit('pin_status', read_bus_2.readPin(7), "23");
+	io.emit('pin_status', read_bus_2.readPin(8), "24");
+	io.emit('pin_status', read_bus_2.readPin(9), "25");
+	io.emit('pin_status', read_bus_2.readPin(10), "26");
+	io.emit('pin_status', read_bus_2.readPin(11), "27");
+	io.emit('pin_status', read_bus_2.readPin(12), "28");
+	io.emit('pin_status', read_bus_2.readPin(13), "29");
+	io.emit('pin_status', read_bus_2.readPin(14), "30");
+  //io.emit('pin_status', read_bus_2.readPin(15), "31");
+	//io.emit('pin_status', read_bus_2.readPin(16), "32");
+  
+  
