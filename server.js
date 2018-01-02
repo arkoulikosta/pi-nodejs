@@ -41,19 +41,23 @@ app.get('/', function(req, res){
 
 io.on('connection', function(socket){
 	socket.on('set_pin', function(msg){
-		console.log('set_pin: ' + msg);
-		if (msg>1 && msg<=16){
+		//console.log('set_pin: ' + msg);
+		if (msg>=1 && msg<=16){
 			write_bus_1.writePin(msg, 1);
-			sleep.msleep(70);
-			write_bus_1.writePin(msg, 0);
+			setTimeout(function(){
+				write_bus_1.writePin(msg, 0);
+			},70);
 		}
 		else if (msg>16 && msg<=30){
 			write_bus_2.writePin(msg-16, 1);
-			sleep.msleep(70);
-			write_bus_2.writePin(msg-16, 0);
+			setTimeout(function(){
+				write_bus_2.writePin(msg-16, 0);
+			},70);
 		}	
 	});
 });
+
+
 
 setInterval(function(){
 	
