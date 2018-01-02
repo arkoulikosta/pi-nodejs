@@ -107,3 +107,27 @@ console.log('set_pin: ' + msg);
 		
   
   
+  
+  io.on('connection', function(socket){
+	socket.on('set_pin', function(msg){
+		console.log('set_pin: ' + msg);
+		if (msg>1 && msg<=16){
+			write_bus_1.writePin(msg, 1);
+			setTimeout(msg);
+		}
+		else if (msg>16 && msg<=30){
+			write_bus_2.writePin(msg-16, 1);
+			setTimeout(msg);
+		}	
+	});
+});
+
+setTimeout( function(mssg){
+	//if (mssg>1 && mssg<=16){
+		write_bus_1.writePin(mssg, 0);
+	//}
+	//else if (mssg>16 && mssg<=30){
+	//	write_bus_2.writePin(mssg-16, 0);
+	//}	
+},70);
+  
