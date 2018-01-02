@@ -97,5 +97,13 @@
 	io.emit('pin_status', read_bus_2.readPin(14), "30");
   //io.emit('pin_status', read_bus_2.readPin(15), "31");
 	//io.emit('pin_status', read_bus_2.readPin(16), "32");
+	
+	
+console.log('Pin 1: %d', read_bus_1.readPin(1));
+//console.log('pin_status' + read_pin_2.readSync()+ Date());
+		
+		
+console.log('set_pin: ' + msg);
+		
   
   
