@@ -65,7 +65,7 @@ setInterval(function(){
 	io.emit('pin_status', read_bus_1.readPin(j), j);	
 	}
 	for (var j = 17; j<=30;j++){
-	io.emit('pin_status', read_bus_2.readPin(j), j);	
+	io.emit('pin_status', read_bus_2.readPin(j-16), j);	
 	}
 	
 }, 1000);
