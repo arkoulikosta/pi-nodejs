@@ -8,11 +8,13 @@
 		var socket = io();
 		socket.on('pin_status', function (data,pinno) {
 			//alert ("data=" + data + " pin no: " + pinno );
-			if(data ===1){
+			if(data === true){
+				//alert ("data=" + data + " pin no: " + pinno );
 				$('#s'+pinno).html("ON");
 				$('#b'+pinno).html("OFF");
 			}
-			else if (data ===0){
+			else if (data === false){
+				//alert ("data=" + data + " pin no: " + pinno );
 				$('#s'+pinno).html("OFF");
 				$('#b'+pinno).html("ON");
 			}
