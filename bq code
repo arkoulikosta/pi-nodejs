@@ -137,3 +137,18 @@ setTimeout( function(mssg){
 Ρολό 3:	<g id="s23">0</g> <button class="button2" id="b25" onclick="set_pin(25)">Ανέβασε</button> <button class="button2" id="b26" onclick="set_pin(26)">Κατέβασε</button></br>
 Ρολό 4:	<g id="s24">0</g> <button class="button2" id="b27" onclick="set_pin(27)">Ανέβασε</button> <button class="button2" id="b28" onclick="set_pin(28)">Κατέβασε</button></br>
 Ρολό 5:	<g id="s25">0</g> <button class="button2" id="b29" onclick="set_pin(29)">Ανέβασε</button> <button class="button2" id="b30" onclick="set_pin(30)">Κατέβασε</button></br>
+
+
+else if (i>=20 && i <=30){
+					if (l==1){
+						$('#s'+i).html("Ακινητο");
+					}
+					else if (l==2){
+						$('#s'+i).html("Ανεβαινει");
+					}
+					else if (l==3){
+						$('#s'+i).html("Κατεβαινει");
+					}
+				}
+
+
