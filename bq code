@@ -131,3 +131,9 @@ setTimeout( function(mssg){
 	//}	
 },70);
   
+  
+  Ρολό 1:	<g id="s21">0</g> <button class="button2" id="b21" onclick="set_pin(21)">Ανέβασε</button> <button class="button2" id="b22" onclick="set_pin(22)">Κατέβασε</button></br>
+Ρολό 2:	<g id="s22">0</g> <button class="button2" id="b23" onclick="set_pin(23)">Ανέβασε</button> <button class="button2" id="b24" onclick="set_pin(24)">Κατέβασε</button></br>
+Ρολό 3:	<g id="s23">0</g> <button class="button2" id="b25" onclick="set_pin(25)">Ανέβασε</button> <button class="button2" id="b26" onclick="set_pin(26)">Κατέβασε</button></br>
+Ρολό 4:	<g id="s24">0</g> <button class="button2" id="b27" onclick="set_pin(27)">Ανέβασε</button> <button class="button2" id="b28" onclick="set_pin(28)">Κατέβασε</button></br>
+Ρολό 5:	<g id="s25">0</g> <button class="button2" id="b29" onclick="set_pin(29)">Ανέβασε</button> <button class="button2" id="b30" onclick="set_pin(30)">Κατέβασε</button></br>
