@@ -152,3 +152,92 @@ else if (i>=20 && i <=30){
 				}
 
 
+
+else if (i==21){
+					if(l === true){
+						$('#s21').html("ανεβαινει");
+					}
+					else if (l === false){
+						
+						$('#s21').html("ακινητο");
+					}	
+				}	
+				//else if (i==22){
+					//if(l === true){
+					//	$('#s21').html("κατεβαινει");
+					//}
+				//	else if (l === false){
+					//	$('#s21').html("ακινητο");
+				//	}	
+				//}	
+				
+				
+				else if (i==23){
+					if(l === true){
+						$('#s22').html("ανεβαινει");
+					}
+					else if (l === false){
+						$('#s22').html("ακινητο");
+					}	
+				}	
+				else if (i==24){
+					if(l === true){
+						$('#s22').html("κατεβαινει");
+					}
+					else if (l === false){
+						$('#s22').html("ακινητο");
+					}	
+				}	
+				
+				
+				else if (i==25){
+					if(l === true){
+						$('#s23').html("ανεβαινει");
+					}
+					else if (l === false){
+						$('#s23').html("ακινητο");
+					}	
+				}	
+				else if (i==26){
+					if(l === true){
+						$('#s23').html("κατεβαινει");
+					}
+					else if (l === false){
+						$('#s23').html("ακινητο");
+					}	
+				}	
+				
+					
+					else if (i==27){
+					if(l === true){
+						$('#s24').html("ανεβαινει");
+					}
+					else if (l === false){
+						$('#s24').html("ακινητο");
+					}	
+				}	
+				else if (i==28){
+					if(l === true){
+						$('#s24').html("κατεβαινει");
+					}
+					else if (l === false){
+						$('#s24').html("ακινητο");
+					}	
+				}	
+						
+				else if (i==29){
+					if(l === true){
+						$('#s25').html("ανεβαινει");
+					}
+					else if (l === false){
+						$('#s25').html("ακινητο");
+					}	
+				}	
+				else if (i==30){
+					if(l === true){
+						$('#s25').html("κατεβαινει");
+					}
+					else if (l === false){
+						$('#s25').html("ακινητο");
+					}	
+				}		
